@@ -4,7 +4,7 @@
     "slug": "gigi-chatbot",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/icon1.png",
     "scheme": "gigichatbot",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,17 +13,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#212020",
+        "foregroundImage": "./assets/images/icon1.png"
+        // "backgroundImage": "./assets/images/android-icon-background.png",
+        // "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anuuujjj.gigichatbot"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon1.png"
     },
     "plugins": [
       "expo-router",
@@ -43,6 +44,18 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "64e6635e-0f11-44c4-9046-34f214575301"
+      }
+    },
+    "fonts": [
+      {
+        "asset": "assets/fonts/PressStart2P-Regular.ttf",
+        "family": "PressStart2P-Regular"
+      }
+    ]
   }
 }
